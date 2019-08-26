@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>M喵(ฅ՞•ﻌ•՞ฅ)-必应</title>
+		<link type="text/css" rel="styleSheet"  href="Mindex.css" />
+<link rel="shortcuticon" href="imges/text.ico" />
+	</head>
+	<body>
+		<div id="index-borde">
+			<img src="imges/20150414H2925_PEiuS.thumb.224_0.gif" id="img">
+			
+			<div id="index-logo-div">
+				<img src="imges/logo-bing-png-bing-logo-transparent-png-761.png" id="index-logo"/>
+			</div>
+			<div id="index-text">
+				<input type="text" id="text"/>
+			</div>
+			
+			<div id="index-div">
+				<ul>
+					<li>Bai du<span>https://www.baidu.com/s?wd=</span></li>
+					<li>Bing <span>http://cn.bing.com/search?q=</span></li>
+					<li>Bi li<span>https://search.bilibili.com/all?keyword=</span></li>
+				</ul>
+				
+			
+		</div>
+		
+		</div>
+		<div id="index-yv">
+			bing Ads M喵(ฅ՞•ﻌ•՞ฅ)
+
+
+The page uses the following language:  &nbsp;  中文  &nbsp;   简体  &nbsp;  <span style="color: cornflowerblue;">English</span> 
+		</div>
+	</body>
+	<script crossorigin="anonymous" integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo" src="https://lib.baomitu.com/jquery/3.4.1/jquery.js">
+		$(function(){
+			var wd='';
+		
+	$("#text").keyup(function(e){
+		 if(e.keyCode==13){
+		  var ls= $(this).val();
+		  if (wd=='') {
+		  	   wd='http://cn.bing.com/search?q=';
+		  }
+		     window.open(wd+ls, "_blank");        
+		  }
+		
+	})
+	
+	
+	
+	$("#index-div li").click(function(){
+		$("#index-div li").css("background-color","#F3F3F3");
+		$(this).css("background-color","#D3D3D3");
+		wd= $(this).find("span").html();	
+	})
+		})
+	</script>
+</html>
